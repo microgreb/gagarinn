@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /ua/*
+Disallow: /ru/*
+Disallow: /en/*
+Disallow: /otel-v-arkadii-gagarinn/
+Disallow: /hotel/*
+Sitemap: https://gagarinn.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Sitemap: https://gagarinn.com/sitemap.xml
+Host: https://gagarinn.com

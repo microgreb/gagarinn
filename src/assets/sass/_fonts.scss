@@ -1,0 +1,53 @@
+//@font-face {
+//    font-family: UniNeueBlack;
+//    src: url("../fonts/Uni/Fontfabric - UniNeueBlack.otf") format("opentype");
+//}
+
+@font-face {
+    font-family: UniNeueBold;
+    font-display: swap;
+    src: url("../fonts/Uni/Fontfabric - UniNeueBold.otf") format("opentype");
+}
+@font-face {
+    font-family: UniNeueBook;
+    font-display: swap;
+    src: url("../fonts/Uni/Fontfabric - UniNeueBook.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UniNeueHeavy;
+    font-display: swap;
+    src: url("../fonts/Uni/Fontfabric - UniNeueHeavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UniNeueRegular;
+    font-display: swap;
+    src: url("../fonts/Uni/Fontfabric - UniNeueRegular.otf") format("opentype");
+}
+
+//@font-face {
+//    font-family: UniNeueThin;
+//    src: url("../fonts/Uni/Fontfabric - UniNeueThin.otf") format("opentype");
+//}
+//@font-face {
+//    font-family: 'ProximaNovaBold';
+//    font-display: swap;
+//    src: url('../fonts/ProximaNovaBold.eot');
+//    src: url('../fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+//    url('../fonts/ProximaNovaBold.woff2') format('woff2'),
+//    url('../fonts/ProximaNovaBold.woff') format('woff'),
+//    url('../fonts/ProximaNovaBold.ttf') format('truetype'),
+//    url('../fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+//}
+
+@font-face {
+    font-family: 'LoraBold';
+    font-display: swap;
+    src: url('../fonts/LoraBold.eot');
+    src: url('../fonts/LoraBold.eot') format('embedded-opentype'),
+    url('../fonts/LoraBold.woff2') format('woff2'),
+    url('../fonts/LoraBold.woff') format('woff'),
+    url('../fonts/LoraBold.ttf') format('truetype'),
+    url('../fonts/LoraBold.svg#LoraBold') format('svg');
+}

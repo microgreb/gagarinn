@@ -1,0 +1,169 @@
+// colors
+$white: #ffffff;
+$text: #DEDEDF;
+$dark: #232328;
+$blue:  #00AAC0;
+$orange: #FF8B00;
+
+//sizes
+$f5: .26vw;
+$f8: .416vw;
+$f10: .52vw;
+$f13: .677vw;
+$f16: .833vw;
+$f18: .933vw;
+$f21: 1.093vw;
+$f26: 1.354vw;
+$f34: 1.77vw;
+$f42: 2.187vw;
+$f55: 2.864vw;
+$f68: 3.541vw;
+$f89: 4.635vw;
+$f110: 5.729vw;
+$f144: 7.5vw;
+$f178: 9.27vw;
+$f233: 12.135vw;
+$f288: 15vw;
+$f400: 20.833vw;
+$f480: 30vw;
+
+// Screen resolutions
+$mini_phone:    320px;
+$small_phone:	576px;
+$phone: 		767px;
+$table: 		992px;
+$small_desktop:	1170px;
+
+// Mixins
+@mixin for($media) {
+    @if $media == ultra_small-min {
+        @media screen and (min-width: $mini_phone) { @content; }
+    }
+    @else if $media == ultra_small-max {
+        @media screen and (max-width: $mini_phone) { @content; }
+    }
+    @if $media == tiny-min {
+        @media screen and (min-width: $small_phone) { @content; }
+    }
+    @else if $media == tiny-max {
+        @media screen and (max-width: $small_phone) { @content; }
+    }
+    @if $media == phone-min {
+        @media screen and (min-width: $phone) { @content; }
+    }
+    @else if $media == phone-max {
+        @media screen and (max-width: $phone) { @content; }
+    }
+    @else if $media == phone-max-landscape {
+        @media all and (max-width: $phone) and (orientation : landscape){ @content; }
+    }
+    @else if $media == tablet-min {
+        @media screen and (min-width: $table) { @content; }
+    }
+    @else if $media == tablet-max {
+        @media screen and (max-width: $table) { @content; }
+    }
+    @else if $media == laptop-min {
+        @media screen and (min-width: $small_desktop) { @content; }
+    }
+    @else if $media == laptop-max {
+        @media screen and (max-width: $small_desktop) { @content; }
+    }
+}
+
+@mixin title {
+    font-family: 'LoraBold', sans-serif;
+    font-size: $f55;
+    color: $dark;
+    padding-bottom: 1.666vw;
+}
+@mixin room-image{
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 45.364vw;
+    height: 31.77083333vw;
+    @include for(laptop-max){
+        width: 100%;
+        height: 69.507vw;
+    }
+}
+@mixin learn-btn{
+    color: $white;
+    font-size: $f21;
+    font-family: UniNeueBold, sans-serif;
+    height: $f55;
+    width: 8.593vw;
+    border-radius: $f8;
+    background-color: $blue;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 1.77vw;
+    cursor: pointer;
+    outline: none;
+}
+@mixin vertical-centerer {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+@mixin section-size {
+    height: 62.5vw;
+    display: flex;
+}
+@mixin input-date{
+    width: $f233;
+    height: $f55;
+    line-height: $f55;
+    background-color: $dark;
+    color: $white;
+    font-size: $f21;
+    font-family: UniNeueBold, sans-serif;
+    border-radius: $f8;
+    border: none;
+    outline: none;
+    padding-left: $f21;
+    cursor: pointer;
+    position: relative;
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+    }
+    &::-webkit-clear-button {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        width: 100%;
+        height: 100px;
+        background: transparent;
+        background-size: 3%;
+        position: absolute;
+        top: -46%;
+        right: -41%;
+        cursor: pointer;
+    }
+}
+@mixin filter-btn{
+    height: 100%;
+    background-color: $orange;
+    border-bottom-right-radius: $f8;
+    border-top-right-radius: $f8;
+    &:hover{
+        background-color: $blue;
+        transition: all .1s ease;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        font-size: $f26;
+        font-family: UniNeueBold, sans-serif;
+        text-transform: uppercase;
+    }
+}

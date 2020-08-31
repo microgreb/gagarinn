@@ -1,0 +1,36 @@
+.datepicker {
+  input {
+    color: transparent !important;
+    text-shadow: 0 0 0 white;
+  }
+}
+.datepicker-dropdown {
+  padding:$f26 !important;
+  td {
+    padding:$f16 !important;
+    font-size:$f21 !important;
+    @include for(laptop-max){
+      font-size:$f68 !important;
+      padding:$f55 !important;
+    }
+  }
+  * .active {
+    background-color:$orange !important;
+    border-color: $orange -10 !important;
+    background-image: none !important;
+    &:active {
+      background-color:$orange !important;
+      border-color: $orange -10 !important;
+    }
+  }
+  .datepicker-switch {
+    font-family: UniNeueBold, sans-serif;
+    font-size:$f26;
+    padding-bottom: $f21;
+    width: auto !important;
+    @include for(laptop-max ){
+      font-size:$f55;
+    }
+
+  }
+}
